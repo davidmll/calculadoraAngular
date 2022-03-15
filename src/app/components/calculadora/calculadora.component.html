@@ -1,0 +1,17 @@
+<div class="container-fluid mt-5">
+  <div class="jumbotron col-sm-4 p-2 bg-inverse mx-auto">
+    <div class="input-group input-group-sm col-sm-12 m-0 p-0">
+      <input
+        type="text"
+        class="col-sm-12 form-control text-lg-right"
+        [(ngModel)]="entrada"
+        placeholder="...0"
+      />
+    </div>
+
+    <app-calcular [entrada]="entrada" (propagar)="procesaLimpiar()"></app-calcular>
+  </div>
+
+
+</div>
+
